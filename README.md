@@ -52,6 +52,9 @@ $6.45 (For 10)
 ## Code: 
 
 Matlab Code (from a .m file) - 
+
+```
+
 function [command] = relay()
 %RELAY Turns light on and off on command
 %   Relay sends the command to ThingSpeak to turn on light or off
@@ -98,7 +101,7 @@ while True:
     if command == 'light_off':
         GPIO.output(4,GPIO.LOW)
     time.sleep(5)  
-
+```
 
 ## Results:
 
