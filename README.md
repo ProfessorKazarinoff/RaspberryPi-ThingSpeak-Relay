@@ -65,11 +65,11 @@ if ~(strcmp(command,'light_on') | strcmp(command,'light_off'))
 end
 
 % TalkBack app ID
-TalkBack_ID = '23497'; 
+TalkBack_ID = 'XXXXXX'; 
 % TalkBack command ID
-Command_ID = '1322093'; 
+Command_ID = 'XXXXXXX'; 
 % TalkBack app API key
-TalkBack_apikey = '0CXH5JFXV72M2BHO'; 
+TalkBack_apikey = 'XXXXXXXXXXXXXX'; 
 url =  strcat('https://api.thingspeak.com/talkbacks/',TalkBack_ID,'/commands.json');
 response = webwrite(url,'api_key',TalkBack_apikey,'command_string',command)
 
