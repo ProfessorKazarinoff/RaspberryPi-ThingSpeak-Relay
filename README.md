@@ -94,7 +94,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4, GPIO.OUT)
 while True:
-    request = Request('https://api.thingspeak.com/talkbacks/23497/commands/execute?api_key=XXXXXXXXXXXXXXXXXX')
+    request = Request('https://api.thingspeak.com/talkbacks/XXXXXXX/commands/execute?api_key=XXXXXXXXXXXXXXXXXX')
     response = urlopen(request)
     command = response.read()
     command = command.decode()
